@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;702&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    --DeepBlue: hsl(228, 45%, 44%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.attribution a {
+    color: var(--DeepBlue);
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--LightGray);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: max-content;
+    width: 90%;
+    max-width: 20rem;
+    background: var(--white);
+    padding: 5px 0 40px 0;
+    border-radius: 25px;
+    /* border-radius: 50%; */
+}
+
+.card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-top: 10px;
+    height: 90%;
+    width: 100%;
+}
+
+.card-image>img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content>h2 {
+    margin: 40px 10px 0 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-content>p {
+    margin: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--GrayishBlue);
+}
